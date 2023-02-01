@@ -1,0 +1,37 @@
+MARL
+
+Config = 1 key + 1 door
+- Q learning for teacher
+- Behavioral cloning for student 1
+- more flexible learning for student 2 (higher epsilon and more flexible reward when student's action doesnt match the teacher's one, ie positive in 30% cases)
+
+Config = 1 key in a different position + 1 door
+- behav cloning should fail
+- more explo should work
+
+
+> compare the number of episode that first reach the goal
+or after N episodes of training, what’s the accuracy after fixed amount of training
+or compute the number of steps to take in testing
+
+--------------------------------------------------------------------------------------
+
+Config = 2 keys + 1 door
+- Q learning -> should fail
+
+Config = 2 keys + 1 door
+- deep QN learning
+
+
+Viz: gif: only works for a few episodes (up to 50) + reward progression curve
+
+
+- having the q learning works is a good step!
+and yes! we can change the setup a bit to make the student learn a bit more about the task rather than directly copying the move of the teacher.
+
+- if you have one key now, we can change it to two keys, the student needs to learn from the teacher to fetch a key to open the door, but the key needs to be different from the key from the teacher.
+- then, we can also change to algo like DQN so we can process the grid image features to generalize better
+
+
+
+
